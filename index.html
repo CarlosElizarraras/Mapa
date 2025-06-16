@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Coordenadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Introduce las coordenadas</h1>
+        <form id="coord-form">
+            <label for="lat">Latitud (ej: 43°58'49" N):</label>
+            <input type="text" id="lat" name="lat" required>
+
+            <label for="lng">Longitud (ej: 15°23'11" E):</label>
+            <input type="text" id="lng" name="lng" required>
+
+            <button type="submit">Enviar</button>
+            <p id="error"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
