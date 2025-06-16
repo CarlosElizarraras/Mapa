@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>I ❤️ You - Isla Galešnjak</title>
     <style>
         body {
@@ -11,25 +11,30 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 20px;
+            min-height: 100vh;
         }
 
         h1 {
             margin-top: 30px;
+            color: #333;
         }
 
         .map-container {
             position: relative;
             width: 90%;
             max-width: 800px;
-            height: 500px;
+            height: 60vh;
             margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         iframe {
             width: 100%;
             height: 100%;
             border: none;
-            border-radius: 8px;
         }
 
         .text-overlay {
@@ -50,6 +55,33 @@
         .right {
             right: 20px;
         }
+
+        .mensaje-karlita {
+            max-width: 800px;
+            background: #fff0f3;
+            border: 2px solid #ff6f91;
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #d6336c;
+            font-style: italic;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(214, 51, 108, 0.3);
+            user-select: text;
+        }
+
+        /* Responsivo */
+        @media screen and (max-width: 480px) {
+            .text-overlay {
+                font-size: 36px;
+            }
+
+            .mensaje-karlita {
+                font-size: 1em;
+                padding: 15px 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,5 +95,14 @@
         <div class="text-overlay left">I</div>
         <div class="text-overlay right">you</div>
     </div>
+
+    <div class="mensaje-karlita">
+        🌹 <strong>Para Karlita</strong> 🌹<br><br>
+        No importa lo que depare el destino, lo que digan los días o lo que nos ponga a prueba la vida...<br>
+        Solo quiero que sepas algo con absoluta certeza:<br><br>
+        <strong>Siempre te voy a querer.</strong><br><br>
+        Pase lo que pase, estés donde estés, <strong>mi corazón va a tener tu nombre grabado en él</strong>.<br>
+        Porque hay personas que llegan para quedarse, y tú, Karlita, te quedaste en lo más profundo de mí.<br><br>
+        </div>
 </body>
 </html>
